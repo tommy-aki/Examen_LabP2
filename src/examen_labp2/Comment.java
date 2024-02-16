@@ -17,8 +17,8 @@ public final class Comment {
     String contenido;
     Calendar fecha;
 
-    public Comment(int postId, String autor, String contenido) {
-        this.postId = postId;
+    public Comment(String autor, String contenido) {
+        postId++;
         this.autor = autor;
         this.contenido = contenido;
         fecha = Calendar.getInstance();
